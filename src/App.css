@@ -1,0 +1,14 @@
+/* CartoonFonts */
+  @font-face {
+    font-family: "CartoonFonts";
+    src: url("CartoonFonts/From\ Cartoon\ Blocks.ttf") ;
+  }
+  .Cube{
+    font-family: "CartoonFonts";
+  }
+
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
