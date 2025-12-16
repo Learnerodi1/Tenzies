@@ -1,9 +1,13 @@
 import React,{Component, useState, useRef} from "react";
 import { Cube } from "./cube";
 import { useEffect } from "react";
+import audio1 from "../assets/audio/vic.mp3"
+// import { useWindowSize } from '../../node_modules/r'
+import Confetti from "react-confetti"
 
 
 const Game = () =>{
+    // let {width, height} = useWindowSize()
     // Beginning
     const update = ()=>{
         return [1,2,3,4,5, 6, 7, 8, 9, 10].map((data)=>{
@@ -50,10 +54,16 @@ const Game = () =>{
     useEffect(()=>{
         if(gameWon){
             buttonRef.current.focus()
+            let audio = new Audio()
+            audio.src = audio1
+            audio.currentTime = 0 
+            audio.play()
         }
     },[gameWon])
     return (
-        <div className="Tenzies">
+        <>
+        {gameWon &&  <Confetti gravity={0.5}/>}
+        <div className="Tenzies">   
             {/* Header */}
             <header>
                 <h1>Tenzies</h1>
@@ -80,6 +90,7 @@ const Game = () =>{
             </main>
             <footer>Built by Learner @{newDate}</footer>
         </div>
+        </>
     )
 }
 export {Game}

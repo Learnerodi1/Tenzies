@@ -12,3 +12,71 @@
     margin: 0;
     box-sizing: border-box;
   }
+  body{
+    background: url(../src/assets/images/mainbg.jpg) no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow: hidden;
+  }
+  #root{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+  }
+.Tenzies{
+  backdrop-filter: blur(10px);
+  background-color: rgba(39, 205, 242, 0.221);
+  padding: 20px;
+  border-radius: 20px;
+  margin-inline: 10px;
+}
+.groupOfDice{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+}
+header{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+  color: rgb(9, 204, 207);
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+h1{
+  background-color: rgb(224, 231, 14);
+  color: rgb(47, 223, 235);
+  font-family: "CartoonFonts";
+  width: fit-content;
+  padding: 10px 30px;
+  font-size: 3rem;
+}
+.controls{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn{
+  outline: none;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 0px;
+  box-shadow: 0px 0px 10px rgba(188, 186, 181, 0.781);
+  background-color: orange;
+  color: whitesmoke;
+  cursor: pointer;
+}
+footer{
+  margin-top: 20px;
+  color: aliceblue;
+  text-align: center;
+}
