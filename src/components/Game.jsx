@@ -67,7 +67,7 @@ const Game = () =>{
             {/* Header */}
             <header>
                 <h1>Tenzies</h1>
-                <p>Rol the until all the dice the same. Click each dice to freeze at its current value</p>
+                <p>Roll the dice until all the dice are the same. Click each dice to freeze at its current value</p>
             </header>
             {/* Main */}
             <main>
